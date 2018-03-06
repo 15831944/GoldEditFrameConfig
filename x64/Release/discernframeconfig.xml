@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='gb2312'?>
+<Root>
+    <UnionItemList/>
+    <RectPermissibleDeviation>
+        <Angle Value="3.000000"/>
+        <PointDistance Value="1.00000"/>
+    </RectPermissibleDeviation>
+    <VerifyRoleList>
+        <Item ShowName="_批准" Name="批准"/>
+        <Item ShowName="_审核" Name="审核"/>
+    </VerifyRoleList>
+    <SignBoxOrientationList>
+        <Group GroupName="图签模板1" ID="1">
+            <Item RefContent="审核" RoleName="审核" Step="0" ShowName="审核" Direction="1"/>
+            <Item RefContent="批准" RoleName="批准" Step="0" ShowName="批准" Direction="1"/>
+            <Item RefContent="校核" RoleName="校核" Step="0" ShowName="校核" Direction="1"/>
+            <Item RefContent="设计" RoleName="设计" Step="0" ShowName="设计" Direction="1"/>
+        </Group>
+        <Group GroupName="图签模板2" ID="1">
+            <Item RefContent="审核" RoleName="审核" Step="0" ShowName="审核" Direction="1"/>
+            <Item RefContent="批准" RoleName="批准" Step="0" ShowName="批准" Direction="1"/>
+            <Item RefContent="校核" RoleName="校核" Step="0" ShowName="校核" Direction="1"/>
+            <Item RefContent="设计" RoleName="设计" Step="0" ShowName="设计" Direction="1"/>
+        </Group>
+    </SignBoxOrientationList>
+    <MultiSignBoxOrientationList>
+        <Group GroupName="会签模板1" ID="1">
+            <Item RefContent="专业" MaxRefSearchCount="1" RoleNamePrefix="专业" Step="0" ShowNamePrefix="专业" Direction="2" MaxRepeat="4"/>
+            <Item RefContent="会签人" MaxRefSearchCount="1" RoleNamePrefix="会签" Step="0" ShowNamePrefix="会签" Direction="2" MaxRepeat="4"/>
+            <Item RefContent="日期" MaxRefSearchCount="1" RoleNamePrefix="日期" Step="0" ShowNamePrefix="日期" Direction="2" MaxRepeat="4"/>
+        </Group>
+    </MultiSignBoxOrientationList>
+    <FindTextList>
+        <Item SignBoxConfigId="1" ID="1" RectContainerWidth="90" MultiSignBoxConfigId="1" RectContainerHeight="12" Content="演示图框1" CommonScaleList="1,10,20,50,100" BlockType="0" AttrOffsetConfigId="1" />
+		<Item SignBoxConfigId="1" ID="2" RectContainerWidth="140" MultiSignBoxConfigId="1" RectContainerHeight="13" Content="演示图框2" CommonScaleList="1,10,20,50,100" BlockType="0" AttrOffsetConfigId="2" />
+    </FindTextList>
+	<AttrOffsetList>
+		<Group ID="1" BlockType="0">
+			<Item Purpose="图号" LB_XOffset="110" LB_YOffset="-28" RT_XOffset="180" RT_YOffset="-21"/>
+			<Item Purpose="图名" LB_XOffset="90" LB_YOffset="-21" RT_XOffset="180" RT_YOffset="0"/>
+		</Group>
+		<Group ID="2" BlockType="0">
+			<Item Purpose="图号" LB_XOffset="70" LB_YOffset="-67" RT_XOffset="140" RT_YOffset="-58"/>
+			<Item Purpose="图名" LB_XOffset="60" LB_YOffset="-58" RT_XOffset="140" RT_YOffset="-10"/>
+		</Group>
+	</AttrOffsetList>
+</Root>

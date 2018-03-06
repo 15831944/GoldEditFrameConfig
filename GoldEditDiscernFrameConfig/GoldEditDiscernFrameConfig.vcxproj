@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{23D661FD-22B1-3DF3-8D76-94A284A0E269}</ProjectGuid>
+    <RootNamespace>GoldEditDiscernFrameConfig</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>GoldEditDiscernFrameConfig</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>GoldEditDiscernFrameConfig</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>GoldEditDiscernFrameConfig</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>GoldEditDiscernFrameConfig</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldEditDiscernFrameConfig</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldEditDiscernFrameConfig</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldEditDiscernFrameConfig</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldEditDiscernFrameConfig</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXml;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXmlPatterns;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtNetwork;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtCore;release;.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\qtmain.lib;shell32.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Xml.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5XmlPatterns.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Network.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\GoldEditDiscernFrameConfig.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXml;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXmlPatterns;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtNetwork;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtCore;release;.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\qtmain.lib;shell32.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Xml.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5XmlPatterns.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Network.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\GoldEditDiscernFrameConfig.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXml;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXmlPatterns;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtNetwork;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtCore;debug;.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\qtmaind.lib;shell32.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Xmld.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5XmlPatternsd.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Networkd.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\GoldEditDiscernFrameConfig.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXml;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtXmlPatterns;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtNetwork;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\include\QtCore;debug;.;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\qtmaind.lib;shell32.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Xmld.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5XmlPatternsd.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Networkd.lib;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\GoldEditDiscernFrameConfig.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_XMLPATTERNS_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GoldEditConfigBasePart.cpp" />
+    <ClCompile Include="GoldEditConfigMultiSignBoxPart.cpp" />
+    <ClCompile Include="GoldEditConfigMultiSignBoxPreview.cpp" />
+    <ClCompile Include="GoldEditConfigSignBoxPart.cpp" />
+    <ClCompile Include="GoldChooseDiscernFrameConfig.cpp" />
+    <ClCompile Include="GoldQListWidget.cpp" />
+    <ClCompile Include="GoldMultiSignBoxEditor.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GoldChooseDiscernFrameConfig.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldChooseDiscernFrameConfig.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldChooseDiscernFrameConfig.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldChooseDiscernFrameConfig.h -o release\moc_GoldChooseDiscernFrameConfig.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldChooseDiscernFrameConfig.h -o release\moc_GoldChooseDiscernFrameConfig.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC GoldChooseDiscernFrameConfig.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC GoldChooseDiscernFrameConfig.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_GoldChooseDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_GoldChooseDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldChooseDiscernFrameConfig.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldChooseDiscernFrameConfig.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldChooseDiscernFrameConfig.h -o debug\moc_GoldChooseDiscernFrameConfig.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldChooseDiscernFrameConfig.h -o debug\moc_GoldChooseDiscernFrameConfig.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC GoldChooseDiscernFrameConfig.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC GoldChooseDiscernFrameConfig.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_GoldChooseDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_GoldChooseDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GoldEditDiscernFrameConfig.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldEditDiscernFrameConfig.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldEditDiscernFrameConfig.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldEditDiscernFrameConfig.h -o release\moc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldEditDiscernFrameConfig.h -o release\moc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC GoldEditDiscernFrameConfig.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC GoldEditDiscernFrameConfig.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldEditDiscernFrameConfig.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldEditDiscernFrameConfig.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldEditDiscernFrameConfig.h -o debug\moc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldEditDiscernFrameConfig.h -o debug\moc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC GoldEditDiscernFrameConfig.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC GoldEditDiscernFrameConfig.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GoldQListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldQListWidget.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldQListWidget.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldQListWidget.h -o release\moc_GoldQListWidget.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldQListWidget.h -o release\moc_GoldQListWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC GoldQListWidget.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC GoldQListWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_GoldQListWidget.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_GoldQListWidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldQListWidget.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldQListWidget.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldQListWidget.h -o debug\moc_GoldQListWidget.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldQListWidget.h -o debug\moc_GoldQListWidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC GoldQListWidget.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC GoldQListWidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_GoldQListWidget.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_GoldQListWidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GoldMultiSignBoxEditor.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldMultiSignBoxEditor.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldMultiSignBoxEditor.h;release\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldMultiSignBoxEditor.h -o release\moc_GoldMultiSignBoxEditor.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldMultiSignBoxEditor.h -o release\moc_GoldMultiSignBoxEditor.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC GoldMultiSignBoxEditor.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC GoldMultiSignBoxEditor.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_GoldMultiSignBoxEditor.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_GoldMultiSignBoxEditor.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldMultiSignBoxEditor.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldMultiSignBoxEditor.h;debug\moc_predefs.h;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldMultiSignBoxEditor.h -o debug\moc_GoldMultiSignBoxEditor.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DQT_DEPRECATED_WARNINGS -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_XMLPATTERNS_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/mkspecs/win32-msvc -I"E:/Projects/Projects_lan/trunk/release2/Qt Projects/EditFrameConfig_5.9/GoldEditDiscernFrameConfig" -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXml -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtXmlPatterns -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtNetwork -IC:/Qt/Qt5.9.2/5.9.2/msvc2017_64/include/QtCore -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\ATLMFC\include" -I"C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.10.25017\include" -I"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\ucrt" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\shared" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\um" -I"C:\Program Files (x86)\Windows Kits\10\include\10.0.14393.0\winrt" GoldMultiSignBoxEditor.h -o debug\moc_GoldMultiSignBoxEditor.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC GoldMultiSignBoxEditor.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC GoldMultiSignBoxEditor.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_GoldMultiSignBoxEditor.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_GoldMultiSignBoxEditor.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="release\moc_GoldChooseDiscernFrameConfig.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_GoldEditDiscernFrameConfig.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_GoldQListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_GoldMultiSignBoxEditor.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -BxC:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -BxC:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="release\qrc_GoldEditDiscernFrameConfig.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_GoldChooseDiscernFrameConfig.h" />
+    <ClInclude Include="ui_GoldEditDiscernFrameConfig.h" />
+    <ClInclude Include="ui_GoldMultiSignBoxEditor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GoldChooseDiscernFrameConfig.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldChooseDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldChooseDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldChooseDiscernFrameConfig.ui -o ui_GoldChooseDiscernFrameConfig.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldChooseDiscernFrameConfig.ui -o ui_GoldChooseDiscernFrameConfig.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC GoldChooseDiscernFrameConfig.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC GoldChooseDiscernFrameConfig.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_GoldChooseDiscernFrameConfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_GoldChooseDiscernFrameConfig.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldChooseDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldChooseDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldChooseDiscernFrameConfig.ui -o ui_GoldChooseDiscernFrameConfig.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldChooseDiscernFrameConfig.ui -o ui_GoldChooseDiscernFrameConfig.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC GoldChooseDiscernFrameConfig.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC GoldChooseDiscernFrameConfig.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_GoldChooseDiscernFrameConfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_GoldChooseDiscernFrameConfig.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GoldEditDiscernFrameConfig.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldEditDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;goldqlistwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldEditDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;goldqlistwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldEditDiscernFrameConfig.ui -o ui_GoldEditDiscernFrameConfig.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldEditDiscernFrameConfig.ui -o ui_GoldEditDiscernFrameConfig.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC GoldEditDiscernFrameConfig.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC GoldEditDiscernFrameConfig.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_GoldEditDiscernFrameConfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_GoldEditDiscernFrameConfig.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldEditDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;goldqlistwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldEditDiscernFrameConfig.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;goldqlistwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldEditDiscernFrameConfig.ui -o ui_GoldEditDiscernFrameConfig.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldEditDiscernFrameConfig.ui -o ui_GoldEditDiscernFrameConfig.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC GoldEditDiscernFrameConfig.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC GoldEditDiscernFrameConfig.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_GoldEditDiscernFrameConfig.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_GoldEditDiscernFrameConfig.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="GoldMultiSignBoxEditor.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldMultiSignBoxEditor.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldMultiSignBoxEditor.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldMultiSignBoxEditor.ui -o ui_GoldMultiSignBoxEditor.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldMultiSignBoxEditor.ui -o ui_GoldMultiSignBoxEditor.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC GoldMultiSignBoxEditor.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC GoldMultiSignBoxEditor.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_GoldMultiSignBoxEditor.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ui_GoldMultiSignBoxEditor.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldMultiSignBoxEditor.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldMultiSignBoxEditor.ui;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldMultiSignBoxEditor.ui -o ui_GoldMultiSignBoxEditor.h</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\uic.exe GoldMultiSignBoxEditor.ui -o ui_GoldMultiSignBoxEditor.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC GoldMultiSignBoxEditor.ui</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC GoldMultiSignBoxEditor.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_GoldMultiSignBoxEditor.h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ui_GoldMultiSignBoxEditor.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="GoldEditDiscernFrameConfig.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">GoldEditDiscernFrameConfig.qrc;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GoldEditDiscernFrameConfig.qrc;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe -name GoldEditDiscernFrameConfig GoldEditDiscernFrameConfig.qrc -o release\qrc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe -name GoldEditDiscernFrameConfig GoldEditDiscernFrameConfig.qrc -o release\qrc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RCC GoldEditDiscernFrameConfig.qrc</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC GoldEditDiscernFrameConfig.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\qrc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\qrc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">GoldEditDiscernFrameConfig.qrc;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GoldEditDiscernFrameConfig.qrc;C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe -name GoldEditDiscernFrameConfig GoldEditDiscernFrameConfig.qrc -o debug\qrc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.9.2\5.9.2\msvc2017_64\bin\rcc.exe -name GoldEditDiscernFrameConfig GoldEditDiscernFrameConfig.qrc -o debug\qrc_GoldEditDiscernFrameConfig.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RCC GoldEditDiscernFrameConfig.qrc</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC GoldEditDiscernFrameConfig.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\qrc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qrc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GoldEditDiscernFrameConfig.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="release\moc_GoldChooseDiscernFrameConfig.cpp">
+      <Filter>GenerateFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_GoldEditDiscernFrameConfig.cpp">
+      <Filter>GenerateFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_GoldMultiSignBoxEditor.cpp">
+      <Filter>GenerateFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_GoldQListWidget.cpp">
+      <Filter>GenerateFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_GoldEditDiscernFrameConfig.cpp">
+      <Filter>GenerateFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldChooseDiscernFrameConfig.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldEditConfigBasePart.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldEditConfigMultiSignBoxPart.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldEditConfigMultiSignBoxPreview.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldEditConfigSignBoxPart.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldMultiSignBoxEditor.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="GoldQListWidget.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ui_GoldChooseDiscernFrameConfig.h">
+      <Filter>GenerateFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_GoldEditDiscernFrameConfig.h">
+      <Filter>GenerateFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_GoldMultiSignBoxEditor.h">
+      <Filter>GenerateFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>GenerateFiles</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldMultiSignBoxEditor.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldEditDiscernFrameConfig.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldChooseDiscernFrameConfig.ui">
+      <Filter>Ui</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldEditDiscernFrameConfig.qrc">
+      <Filter>Resource</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldChooseDiscernFrameConfig.h">
+      <Filter>Cpp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldEditDiscernFrameConfig.h">
+      <Filter>Cpp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldMultiSignBoxEditor.h">
+      <Filter>Cpp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GoldQListWidget.h">
+      <Filter>Cpp</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GenerateFiles">
+      <UniqueIdentifier>{a1b2c47f-d4d3-4211-a2f4-f32cc628b146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{b76c3aca-5bef-4603-9d4d-8e6bf5549b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cpp">
+      <UniqueIdentifier>{75e3ae26-4408-4357-95a5-8e459ca5fef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui">
+      <UniqueIdentifier>{49d5a455-1c26-4fc6-8ecb-7eed42c2ac0d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GoldEditDiscernFrameConfig.rc">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+</Project>
