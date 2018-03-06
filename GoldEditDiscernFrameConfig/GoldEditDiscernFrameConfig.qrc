@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="GoldEditDiscernFrameConfig">
+    <qresource prefix="/GoldEditDiscernFrameConfig">
+        <file>Icon.png</file>
     </qresource>
 </RCC>

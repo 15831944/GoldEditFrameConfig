@@ -217,7 +217,7 @@
             <property name="rightMargin">
              <number>70</number>
             </property>
-            <item alignment="Qt::AlignLeft">
+            <item>
              <widget class="QPushButton" name="button_addMultiGroup">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -230,7 +230,7 @@
               </property>
              </widget>
             </item>
-            <item alignment="Qt::AlignLeft">
+            <item>
              <widget class="QPushButton" name="button_deleteMultiGroup">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">

@@ -9,6 +9,7 @@ GoldChooseDiscernFrameConfig::GoldChooseDiscernFrameConfig(QWidget *parent) :
     ui->setupUi(this);
 	this->setWindowTitle(QString::fromLocal8Bit("为检索文本选择签名框配置"));
 	this->setWindowFlags(Qt::CustomizeWindowHint | Qt::WindowCloseButtonHint);
+	this->setWindowIcon(QIcon(":/GoldEditDiscernFrameConfig/Icon.png"));
 	ui->tableWidget_findText->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 	editSignBoxConfigDlg = new GoldEditDiscernFrameConfig(this);
 	initAllConnection();

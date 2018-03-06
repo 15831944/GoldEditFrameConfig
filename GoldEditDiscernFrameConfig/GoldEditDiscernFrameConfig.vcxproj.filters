@@ -95,9 +95,4 @@
       <UniqueIdentifier>{49d5a455-1c26-4fc6-8ecb-7eed42c2ac0d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="GoldEditDiscernFrameConfig.rc">
-      <Filter>Resource</Filter>
-    </None>
-  </ItemGroup>
 </Project>

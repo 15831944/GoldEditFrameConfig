@@ -456,9 +456,6 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\qrc_GoldEditDiscernFrameConfig.cpp;%(Outputs)</Outputs>
     </CustomBuild>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="GoldEditDiscernFrameConfig.rc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>
